@@ -1,34 +1,118 @@
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #FFFDFD;
-    color: #543D29;
-  }
-  
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px;
-  }
-  
-  h1 {
-    text-align: center;
-  }
-  h2 {
-    font-family: 'Victor+Mono', sans-serif;
-    font-size: 4.5rem;
-    color: #78b127; /* Change the color to your desired color */
-  }
-  
-  h3 {
-    color: #8F4314;
-  }
-  
-  a {
-    color: #4f560c;
-  }
-  
-  ul {
-    list-style: disc;
-    margin-left: 20px;
-  }
-  
+  font-family: 'Poppins', sans-serif;
+  background-color: #ede5d0;
+  color: #ECD5B3;
+}
+
+nav {
+  display: flex;
+  background-color: #61755B;
+  justify-content: space-around;
+  align-items: center;
+  height: 7%;
+
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: flex;
+  margin: 0 4%;
+}
+nav ul mo{
+  display: inline;
+  margin: 0 4%;
+}
+.left {
+  font-size: 180%;
+  font-weight: bold;
+  margin-left: -10%;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 4%;
+}
+.banner {
+  background-image: url('website banner.png'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  height: 460px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1a1917;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 300%;
+  font-weight: bold;
+  text-align: center;
+}
+.banner-text {
+  display: flex;
+  margin-left: -27%;
+  margin-top: -6%;
+  animation: textLoop 8s infinite;
+}
+.banner-subtext {
+  margin-top: 6%; /* Adjust this value as needed */
+  margin-left: -40%;
+}
+
+@keyframes textLoop {
+  0%, 100% { opacity: 0; }
+  20% { opacity: 1; }
+  40% { opacity: 1; }
+  60% { opacity: 1; }
+  80% { opacity: 1; }
+}
+.resumematerial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -1%;
+  padding: 4%;
+  margin-left: 5%;
+
+  font-family: 'Poppins', sans-serif;
+  color: #543D29;
+  font-size: 140%;
+}
+
+.resumematerial h2 {
+  margin-top: auto;
+  color: #c57c1d; /* Change the color to your desired color */
+  max-width: 100%;
+  font-size: 150%;
+  font-style: italic;
+  margin-bottom: 1%;
+}
+
+.resumematerial h3 {
+  color: #8F4314;
+  margin-top: 2%;
+}
+
+.resumematerial p {
+  margin-bottom: 1%;
+}
+
+.resumematerial ul {
+  list-style: disc;
+  margin-left: 2%;
+  margin-bottom: 1%;
+}
+
+.resumematerial li {
+  margin-bottom: 0.5%;
+}
+
+/* Additional styles for better readability */
+.container {
+  line-height: 1.6;
+}
+
